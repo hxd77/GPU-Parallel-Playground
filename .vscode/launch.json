@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "CUDA Debug",
+      "type": "cuda-gdb",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}",
+      "cwd": "${fileDirname}",
+      "preLaunchTask": "mynvcc"
+    }
+  ]
+}
