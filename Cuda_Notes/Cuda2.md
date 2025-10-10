@@ -333,3 +333,4 @@ int main(void)
     Hello World from block-0 and thread-(1, 2)! // 5 = 2 * 2 + 1
     Hello World from block-0 and thread-(0, 3)! // 6 = 3 * 2 + 0
     Hello World from block-0 and thread-(1, 3)! // 7 = 3 * 2 + 1
+    
