@@ -129,7 +129,7 @@ __global__ void copy(const real*A, real*B,int N)
 __global__ void transpose1(const real*A, real*B,int N)
 {
     const int nx=blockIdx.x*blockDim.x+threadIdx.x;
-    const int ny=blockIdx.y*blockDim.y+threadIdx.y;
+    const int ny=blockIdx.y*blockDim.y+threadIdx.y;    
     if(nx<N&&ny<N)
     {
         B[nx*N+ny]=A[ny*N+nx];
