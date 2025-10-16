@@ -20,7 +20,7 @@
     <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Package version">
     </p>
 
-> 本书主要参考了[CUDA编程基础与实战]([CUDA编程_百度百科](https://baike.baidu.com/item/CUDA编程/59848340))，书籍[Github地址](https://github.com/brucefan1983/CUDA-Programming)
+> 本书主要参考了[CUDA编程基础与实战](https://baike.baidu.com/item/CUDA编程/59848340)，书籍[Github地址](https://github.com/brucefan1983/CUDA-Programming)
 
 ## 📘 项目简介
 
