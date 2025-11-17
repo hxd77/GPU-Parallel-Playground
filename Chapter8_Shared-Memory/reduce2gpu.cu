@@ -61,7 +61,7 @@ void __global__ reduce_shared(real *d_x, real *d_y)
     const int tid = threadIdx.x;
     const int bid = blockIdx.x;
     const int n = bid * blockDim.x + tid;
-    __shared__ real s_y[128];
+    __shared__ real s_y[128]; //共享数组长度为线程块大小，每个元素内存都是线程块大小的real类型
     s_y[tid] = (n < N) ? d_x[n] : 0.0;
     __syncthreads();
 
@@ -86,7 +86,7 @@ void __global__ reduce_dynamic(real *d_x, real *d_y)
     const int tid = threadIdx.x;
     const int bid = blockIdx.x;
     const int n = bid * blockDim.x + tid;
-    extern __shared__ real s_y[];
+    extern __shared__ real s_y[];   //动态共享数组
     s_y[tid] = (n < N) ? d_x[n] : 0.0;
     __syncthreads();
 
